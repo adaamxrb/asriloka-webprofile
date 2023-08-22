@@ -20,8 +20,10 @@ const removeActiveClass = () => {
 servicesButtons.forEach(item => {
     item.addEventListener('click', () => {
         removeActiveClass();
-         const serviceClass = item.classList[1];
+        const serviceClass = item.classList[1];
         getService(serviceClass)
         item.classList.add('active')
     })
 })
+
+getService('berpengalaman')

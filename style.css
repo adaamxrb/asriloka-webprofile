@@ -344,3 +344,60 @@ header {
     padding-top: 1rem;
     margin-bottom: 0.8rem;
 }
+
+
+/* ===== projects ===== */
+
+.projects_categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: c;
+    margin: 4rem 0 2.5rem;
+    flex-wrap: wrap;
+}
+
+.projects_categories li {
+    background: var(--color-gray-100);
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-4);
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.projects_categories li:hover,
+.projects_categories li.active {
+    background: rgb(48, 108, 48);
+    color: var(--color-gray-100);
+}
+
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 3.5rem;
+}
+
+.project {
+    background-color: var(--color-gray-100);
+    padding: 1rem;
+    border-radius: var(--radius-2);
+    transition: var(--transition);
+}
+
+.project:hover {
+    box-sizing: 0 3rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.project_image {
+    height: auto;
+    max-height: 12rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-4);
+    overflow: hidden;
+}
+
+.project p {
+    margin: 0.5rem 0 1.5rem;
+}
