@@ -2,7 +2,7 @@ const servicesData = [
     {
         title: "Berpengalaman",
         category: "berpengalaman",
-        description: ['Dalam kegiatan outbound akan dipandu oleh fasilitator-fasilitator yang berpengalaman, menyenangkan, dan cerdas. Memberikan pengalaman bermain yang tak terlupakan dengan didampingi oleh fasilitator berpengalaman dan penuh kesenangan. Mereka tidak hanya mengarahkan kegiatan dengan cerdas, tetapi juga memastikan setiap momen bermain menjadi menyenangkan dan mengedukasi. Keahlian dalam menggabungkan hiburan dan pembelajaran akan membuat pengalaman wisata anda menjadi tak terlupakan']
+        description: ['Berpengalaman sejak tahun 2003. Dalam kegiatan outbound akan dipandu oleh fasilitator-fasilitator yang berpengalaman, menyenangkan, dan cerdas. Memberikan pengalaman bermain yang tak terlupakan dengan didampingi oleh fasilitator berpengalaman dan penuh kesenangan. Mereka tidak hanya mengarahkan kegiatan dengan cerdas, tetapi juga memastikan setiap momen bermain menjadi menyenangkan dan mengedukasi. Keahlian dalam menggabungkan hiburan dan pembelajaran akan membuat pengalaman wisata anda menjadi tak terlupakan']
     },
     {
         title: "Profesional",
@@ -16,7 +16,45 @@ const servicesData = [
     },
     {
         title: "Provider Terbaik",
-        category: "providerterbaik",
+        category: "providerTerbaik",
         description: ['Sebagai penyedia terbaik di Wonosalam dengan konsep ekowisata yang unik, pusat pelatihan yang komprehensif, dan resor yang menawan.  Sebagai pusat pelatihan, Asriloka menawarkan program edukatif yang terbaik dalam kelasnya, dilakukan oleh para ahli di bidangnya. Menyajikan layanan yang tak tertandingi dan harga sesuai dengan kebutuhan para pengunjung.']
+    }
+]
+
+const programsData = [
+    {
+        title: "Indoor Training",
+        category: "indoorTraining",
+        description: ['-  Character building training', '-  Team working training', '-  Balancing, intelectual, spiritual, emotional, leadership (BISEL)', '-  Communication skill training', '-  Manajerial skill training']
+    }, 
+    {
+        title: "Outbound Training",
+        category: "outboundTraining",
+        description: ['-  Pelajar (SD, SMP, SMA/SMK/Sederajat)', '-  Mahasiswa', '-  Organisasi', '-  Karyawan']
+    },
+    {
+        title: "Employee Gathering",
+        category: "employeeGathering",
+        description: ['-  Temu ramah', '-  Bakar - bakar', '-  Refresh training, dsb.']
+    },
+    {
+        title: "Meeting & Workshop",
+        category: "meeting&workshop",
+        description: [' ']
+    },
+    {
+        title: "Latihan Dasar Kepemimpinan",
+        category: "latdasKepemimpinan",
+        description: ['-  LDK siswa', '-  LDK mahasiswa', '-  Pramuka', '-  Paskibra', '-  PMR, dsb.']
+    },
+    {
+        title: "Family Gathering",
+        category: "familyGathering",
+        description: ['- Refresh program', '-  Have fun, dsb.']
+    },
+    {
+        title: "Choice of Facilities",
+        category: "choiceOfFacilities",
+        description: ['-  Api unggun', '-  Jurit malam', '-  BBQ (bakar-bakar)', '-  Terapi ikan', '-  Karaoke', '-  Frame love', '-  Sports area', '-  Flying fox', '-  Petik buah', '-  Jelajah alam', '-  Susur sungai', '-  Bermain di sungai']
     }
 ]
