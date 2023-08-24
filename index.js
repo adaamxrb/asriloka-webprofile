@@ -67,3 +67,32 @@ programsButtons.forEach(item => {
 })
 
 getProgram('indoorTraining')
+
+
+// ========== theme toggle (light & dark mode)
+const themeBtn = document.querySelector('.nav_theme-btn');
+themeBtn.addEventListener('click', () => {
+    let bodyClass = document.body.className;
+    if(!bodyClass) {
+        bodyClass = 'dark';
+        document.body.className = bodyClass;
+        // change toggle icon 
+        themeBtn.innerHTML = "<i class='uil uil-sun'></i>"
+        // save theme to local storage
+        window.localStorage.setItem('theme', bodyClass);
+    } else {
+        bodyClass = '';
+        document.body.className = bodyClass;
+        // change toggle icon 
+        themeBtn.innerHTML = "<i class='uil uil-moon'></i>"
+        
+        // save theme to local storage
+        window.localStorage.setItem('theme', bodyClass);
+    }
+})
+
+
+// load theme on load
+window.addEventListener('load', () => {
+    document.body.className = window.localStorage.getItem('theme');
+})
