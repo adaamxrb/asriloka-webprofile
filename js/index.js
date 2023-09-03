@@ -95,15 +95,6 @@ window.addEventListener('load', () => {
     document.body.className = window.localStorage.getItem('theme');
 })
 
-
-// galeri
-// lightbox.option({
-//     'resizeDuration': 200,
-//     'wrapAround': true,
-//     'disableScrolling': true
-// })
-
-
 // ========== nav toggle (small screens)
 const navMenu = document.querySelector('.nav_menu')
 const navOpenBtn = document.querySelector('.nav_toggle-open')

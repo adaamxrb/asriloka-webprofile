@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
-
+    <script type="text/javascript">window.$crisp=[];
+        window.CRISP_WEBSITE_ID="b03dbceb-f2aa-4991-a283-b7f894b9d4b1";
+        (function(){
+            d=document;
+            s=d.createElement("script");
+            s.src="https://client.crisp.chat/l.js";
+            s.async=1;
+            d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
     <title>Asriloka</title>
 </head>
+
 <body class="show-chatbot">
     <nav>
         <div class="container nav_container">
@@ -37,28 +46,6 @@
             </div>
         </div>
     </nav>
-
-        <button class="chatbot-toggler">
-            <span class="material-symbols-outlined">mode_comment</span>
-            <span class="material-symbols-outlined">close</span>
-        </button>
-        <div class="chatbot">
-            <div class="cb">
-                <h2>Chatbot</h2>
-                <span class="close-btn material-symbols-outlined">close</span>
-            </div>
-            <ul class="chatbox">
-                <li class="chat incoming">
-                    <span class="material-symbols-outlined">smart_toy</span>
-                    <p>Halo.. <br>Ada yang bisa saya bantu?</p>
-                </li>
-                
-            </ul>
-            <div class="chat-input">
-                <textarea id="data" placeholder="Tulis pesan..." required></textarea>
-                <span id="send-btn" class="material-symbols-outlined">Send</span>
-            </div>
-        </div>
 
     <header>
         <div class="container header_container">
@@ -89,29 +76,29 @@
             <div class="about_details" data-aos="fade-in" data-aos-delay="300">
                 <h1>Filosofi Asriloka</h1>
                 <div class="centering-items">
-                <div class="about_cards">
-                    <article class="about_card">
-                        <div class="centering-filosofi">
-                            <img src="./assets/filosofi1.png">
-                        </div><br>
-                        <h4>Logo "AW"</h4>
-                        <small>Komunikasi dengan Allah atau Tuhan Yang Maha Esa (Habluminallah)</small><br>
-                    </article>
-                    <article class="about_card">
-                        <div class="centering-filosofi">
-                            <img src="./assets/filosofi2.png">
-                        </div><br>                        <h4>"Daun"</h4>
-                        <small>Simbol bumi atau alam, melestarikan alam agar selalu asri (Habluminal Alam)</small><br>
-                    </article>
-                    <article class="about_card">
-                        <div class="centering-filosofi">
-                            <img src="./assets/filosofi3.png">
-                        </div><br>
-                        <h4>"5 helai daun"</h4>
-                        <small>Melaksanakan pancasila dan melaksanakan perintah agama (Habluminannas)</small><br>
-                    </article>
+                    <div class="about_cards">
+                        <article class="about_card">
+                            <div class="centering-filosofi">
+                                <img src="./assets/filosofi1.png">
+                            </div><br>
+                            <h4>Logo "AW"</h4>
+                            <small>Komunikasi dengan Allah atau Tuhan Yang Maha Esa (Habluminallah)</small><br>
+                        </article>
+                        <article class="about_card">
+                            <div class="centering-filosofi">
+                                <img src="./assets/filosofi2.png">
+                            </div><br>                        <h4>"Daun"</h4>
+                            <small>Simbol bumi atau alam, melestarikan alam agar selalu asri (Habluminal Alam)</small><br>
+                        </article>
+                        <article class="about_card">
+                            <div class="centering-filosofi">
+                                <img src="./assets/filosofi3.png">
+                            </div><br>
+                            <h4>"5 helai daun"</h4>
+                            <small>Melaksanakan pancasila dan melaksanakan perintah agama (Habluminannas)</small><br>
+                        </article>
+                    </div>
                 </div>
-            </div>
                 <p>
                 <b><br>ASRI bermakna indah dipandang mata. <br>
                     LOKA bermakna Bumi atau tempat yang luas. <br></b>
@@ -375,7 +362,7 @@
     </section>
 
     <section class="contact" id="contact"> 
-        <h1 style="color: white;">Contact Us</h1>
+        <h1 style="color: white;">Kontak Kami</h1>
         <p style="color: white;">Siap melayani anda setiap waktu</p>
         <div class="container contact_container">
             <ul class="contact_list">
@@ -392,8 +379,7 @@
                     <i class="uil uil-location-point"></i>
                 </a></li>
             </ul>
-
-            <form action="https://formsubmit.co/c5931ba88bab28ca5d95544ff16e6fdc" method="post" class="contact_form" data-aos="fade-up" data-aos-delay="600">
+            <form action="https://formsubmit.co/c5931ba88bab28ca5d95544ff16e6fdc" method="post" class="contact_form" data-aos="fade-up" data-aos-delay="500">
                 <input type="text" name="Nama" placeholder="Nama">
                 <input type="email" name="Email" placeholder="Email">
                 <textarea rows="7" placeholder="Masukkan pesan"></textarea>
@@ -427,40 +413,16 @@
     <script src="mix/dist/mixitup.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/index.js"></script>
-
     <script>
         const chatbotToggler = document.querySelector('.chatbot-toggler');
         const chatbotCloseBtn = document.querySelector('.close-btn');
         chatbotCloseBtn.addEventListener('click', () => document.body.classList.remove('show-chatbot'));
         chatbotToggler.addEventListener('click', () => document.body.classList.toggle('show-chatbot'));
     </script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({duration: 1500, offset: 80});
     </script>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-        $(function(){
-            $("#send-btn").on("click", function(){
-                $value = $("#data").val();
-                $msg = '<li class="chat outgoing"><p>'+ $value +'</p></li>';
-                $(".chatbox").append($msg);
-                $("data").val('');
-
-                // star ajax code
-                $.ajax({
-                    url: 'message.php',
-                    type: 'POST',
-                    data: 'text='+$value,
-                    success: function(result){
-                        $replay = '<ul class="chatbox"><li class="chat incoming"><span class="material-symbols-outlined">smart_toy</span><p>'+ result +'</p></li>';
-                        $(".chatbox").append($replay);    
-                    }
-                });
-            });
-        }) (jQuery);
-    </script>
 </body>
 </html>
